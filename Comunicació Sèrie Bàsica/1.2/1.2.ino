@@ -10,16 +10,16 @@
 //********* Variables ************************************************************
 
 //********* Setup ****************************************************************
-void setup()                // el setup nomes s'executa una vegada, quan el sketch s'inicia
+void setup()              
 {
-  Serial.begin(9600);       // Executa Serial Begin a 9600 bts
-  Serial.println("Hello world!"); // Escriu "Hello World!" al serial port
+  Serial.begin(9600);  // inicia el serial port a 9600 bts  
 }
 
 //********* Loop *****************************************************************
-void loop()   // el void s'executa infinitament
+void loop()                     
 {
-           // com que no hi ha codi no farà absolutament res, però ho farà infinitament
+  Serial.print("Hello world!");  // Ensenya "Hello world!" pel serial port infinitament
+  delay(1000); // Retrassa cada impressió pel serial port 1s
 }
 
 //********* Funcions *************************************************************
